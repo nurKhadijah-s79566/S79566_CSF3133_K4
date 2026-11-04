@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CampusBake Online Order </title>
+</head>
+
+<body>
+
+<div id="header">
+<h1> CampusBake&reg; </h1>
+<p>Freshly Baked for Everyone, Made With Love</p>
+</div>
+
+<div id="nav">
+<a href="#header">Home | </a>
+<a href="#content">Order Now | </a>
+<a href="#sidebar">Price List</a>
+</div>
+
+<div id="content">
+<h2>Welcome to CampusBake!</h2>
+<p>
+Welcome to <strong>CampusBake</strong>, your favorite <em>campus bakery!</em>
+We provide <strong>freshly baked & delicious</strong> bakery at affordable price.
+</p>
+
+<hr>
+<h3>Our Special Today!</h3>
+<ul>
+<li>Flavoured Cupcake</li>
+<li>Tiramisu Cake Slice</li>
+<li>Carrot Cake Slice</li>
+<li>Strawberry Short Cake Slice</li>
+</ul>
+
+<h3>Important Info</h3>
+<p>
+<strong>How to Order:</strong>
+<ol>
+<li>Fill in required personal details </li>
+<li>Choose your cupcakes flavour preferences</li>
+<li>Please enter the quantity and check the total price</li>
+<li>Click "Submit Order"</li>
+</ol>
+</p>
+<p> <strong>Orders &gt; 10pieces</strong> will get a free drinks!</p>
+
+<hr>
+<h2>Place Order</h2>
+<form oninput="total.value =(cupcakes.value * 3) + (slice.value * 5)">
+<fieldset>
+<!--Customer Details-->
+<legend> Customer Information </legend>
+
+<label for="name">Customer Name:</label><br>
+<input type="text" id="name" name="name"
+placeholder="Enter your name" required autofocus>
+<br><br>
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone" required>
+<br><br>
+<label for="email">Email Address:</label><br>
+<input type="email" id="email" name="email" required>
+<br><br>
+<label for="date">Pick-up Date:</label><br>
+<input type="date" id="date" name="date">
+<br><br>
+<label for="time">Pick-up Time:</label><br>
+<input type="time" id="time" name="time">
+
+</fieldset>
+
+<br>
+<!-- Cupcake preferences -->
+<fieldset>
+<legend>Cupcakecake Preferences</legend>
+
+<label for="flavour">Choose Flavour:</label><br>
+<input list="flavours" id="flavour" name="flavour">
+<datalist id="flavours">
+<option value="Chocolate">
+<option value="Vanilla">
+<option value="Strawberry">
+<option value="Matcha">
+</datalist>
+<br><br>
+<label for="icing">Icing Colour:</label><br>
+<input type="color" id="icing" name="icing">
+<br><br>
+<label for="sweetness">Sweetness Level (1-5):</label><br>
+<input type="range" id="sweetness" name="sweetness" 
+min="1" max="5" step="1" value="3">
+</fieldset>
+
+<br>
+<!-- Special Menu's preferences -->
+<fieldset>
+<legend>Special Menu's Preferences</legend>
+
+<label for="Special Menu">Choose Your Cake:</label><br>
+<input list="Special Menus" id="Special Menu" name="Special Menu">
+<datalist id="Special Menus">
+<option value="Tiramisu Cake">
+<option value="Carrot Cake">
+<option value="Strawberry Short Cake">
+</datalist>
+</fieldset>
+
+<br>
+<!-- PRICE CALCULATOR -->
+<fieldset>
+<legend>Order Quantity and Total Price</legend>
+
+<label for="cupcakes">Cupcakes (RM 3.00 each):</label><br>
+<input type="number" id="cupcakes" name="cupcakes"
+min="0" value="0">
+<br><br>
+<label for="slices">Cake Slices (RM 5.00 each):</label><br>
+<input type="number" id="slices" name="slices"
+min="0" value="0">
+<br><br>
+<label for="total">Total Price (RM):</label>
+<output name="total" for="cupcakes slices">0</output>
+</fieldset>
+
+<br>
+<!-- Submit button -->
+<input type="submit" value="Submit Order">
+<input type="reset" value="Reset">
+</form>
+</div>
+
+
+
+<div id="sidebar">
+<h2>Price List</h2>
+<ul>
+<li>Flavoured Cupcake - RM 3.00</li>
+<li>Tiramisu Cake Slice - RM 5.00</li>
+<li>Carrot Cake Slice - RM 5.00</li>
+<li>Strawberry Short Cake Slice - RM 5.00</li>
+</ul>
+<p>CampusBake&reg; - <em>Orders &gt; 10 pieces get a free drink!</em></p>
+</div>
+
+<div id="footer">
+<hr>
+<p>
+&copy; 2026 CampusBake&reg;.
+All Rights Reserved.
+</p>
+<p>
+Contact us: campusbake@gmail.com
+&nbsp; | &nbsp;
+Campus Bakery, UMT.
+</p>
+</div>
+
+</body>
+</html>
