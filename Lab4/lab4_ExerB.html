@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+ERRORS FOUND AND CORRECTED:
+1. Missing viewport meta tag.
+2. Navigation links were not connected to section IDs.
+3. Menu navigation link had no valid target.
+4. Menu list displayed bullet points.
+5. Main heading was missing a top border.
+6. Menu prices were not bold and red.
+7. Hover selector did not support visited links.
+8. Video source was missing or incorrect.
+9. Video element was missing the controls attribute.
+10. Navigation styles were not separated into an external CSS file.
+11. Menu items did not display promotional old prices.
+12. Video was missing figure and figcaption elements.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e-Café Campus</title>
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<body>
+
+    <!-- Internal CSS for general page styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fff8f0;
+        }
+
+        /* Add a line above the main heading */
+        h1 {
+            border-top: 3px solid brown;
+            padding-top: 15px;
+        }
+
+        /* Remove bullet points from menu list */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style menu prices */
+        .price {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Make hover colour work on all links */
+        a:hover,
+        a:visited:hover {
+            color: orange;
+        }
+
+        /* Make video responsive */
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Style feedback form */
+        .feedback-form {
+            background-color: #f5e6d3;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 450px;
+        }
+
+        .feedback-form input,
+        .feedback-form select {
+            margin: 5px 0 12px;
+        }
+
+        .feedback-form label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .feedback-form button {
+            background-color: brown;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: darkred;
+        }
+
+        footer {
+            margin-top: 30px;
+            border-top: 1px solid brown;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main heading -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Today's menu section -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p>Freshly brewed coffee and local delights every day.</p>
+
+        <ul>
+            <li>
+                <h3>Kopi Tarik</h3>
+                <p>
+                    <span class="old-price">RM 4.50</span>
+                    <span class="price">RM 3.50</span>
+                </p>
+            </li>
+
+            <li>
+                <h3>Nasi Lemak</h3>
+                <p>
+                    <span class="old-price">RM 6.50</span>
+                    <span class="price">RM 5.00</span>
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Video section -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Discover our delicious food and freshly brewed coffee at e-Café Campus!
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Feedback form section -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form" action="#" method="post">
+
+            <!-- Customer name -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <!-- Customer email -->
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <!-- Visit type options -->
+            <p>Visit Type:</p>
+
+            <input type="radio" id="dinein" name="visit" value="Dine-in">
+            <label for="dinein">Dine-in</label>
+
+            <input type="radio" id="takeaway" name="visit" value="Take-away">
+            <label for="takeaway">Take-away</label>
+
+            <br><br>
+
+            <!-- Favourite menu items -->
+            <p>Favourite Items:</p>
+
+            <input type="checkbox" id="kopi" name="favourite" value="Kopi Tarik">
+            <label for="kopi">Kopi Tarik</label>
+            <br>
+
+            <input type="checkbox" id="nasi" name="favourite" value="Nasi Lemak">
+            <label for="nasi">Nasi Lemak</label>
+            <br>
+
+            <input type="checkbox" id="tea" name="favourite" value="Tea">
+            <label for="tea">Tea</label>
+            <br><br>
+
+            <!-- Submit feedback -->
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer and contact information -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:ecafe@campus.com">ecafe@campus.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
