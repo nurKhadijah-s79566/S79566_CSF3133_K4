@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic HTML5 structure -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu - Tourism Promotion</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS -->
+
+    <style>
+        /* Internal CSS Rule 1 */
+        #intro {
+            text-align: center;
+            padding: 20px;
+        }
+        /* Internal CSS Rule 2 */
+        #intro p {
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header id="header">
+        <h1>Visit Terengganu</h1>
+        <p>Discover the Beauty of Malaysia's East Coast!</p>
+    </header>
+
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Plan Your Trip</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- INTRODUCTION SECTION -->
+    <section id="intro">
+
+        <h2>Welcome to Terengganu!</h2>
+        <p>
+            Experience beautiful beaches, amazing islands,
+            delicious traditional food and rich local culture.
+            Terengganu is the perfect destination for your
+            next holiday!
+        </p>
+    </section>
+
+
+    <!-- DESTINATIONS SECTION -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <!-- Destination 1 -->
+        <article class="card">
+
+            <h3>Pulau Redang</h3>
+            <p>
+                Enjoy crystal-clear water, white sandy beaches
+                and exciting snorkelling activities.
+            </p>
+
+            <p class="price">
+                Promotion:
+                <span class="old-price">RM 299</span>
+                RM 199
+            </p>
+        </article>
+
+
+        <!-- Destination 2 -->
+        <article class="card">
+
+            <h3>Tasik Kenyir</h3>
+            <p>
+                Explore Malaysia's largest man-made lake
+                surrounded by beautiful tropical forests.
+            </p>
+
+            <p class="price">
+                Promotion:
+                <span class="old-price">RM 250</span>
+                RM 180
+            </p>
+
+        </article>
+
+
+        <!-- Destination 3 -->
+        <article class="card">
+
+            <h3>Pasar Payang</h3>
+
+            <p>
+                Discover traditional handicrafts, local food
+                and unique souvenirs from Terengganu.
+            </p>
+
+            <p class="price">
+                Promotion:
+                <span class="old-price">RM 100</span>
+                RM 70
+            </p>
+
+        </article>
+
+        <!-- Trip seats availability -->
+        <p>
+            Trip Registration:
+            <meter min="0" max="40" value="28"></meter>
+            28 out of 40 seats filled.
+        </p>
+
+    </section>
+
+
+    <!-- VIDEO SECTION -->
+    <section id="video">
+
+        <h2>Explore Terengganu</h2>
+
+        <p>
+            Watch our promotional video and discover
+            the beauty of Terengganu!
+        </p>
+
+        <figure>
+
+            <video width="640" height="360" controls>
+                <source src="terengganu.mp4" type="video/mp4">
+
+                Your browser does not support the video element.
+            </video>
+
+            <figcaption class="caption">
+                Discover the beautiful destinations of Terengganu.
+            </figcaption>
+
+        </figure>
+
+    </section>
+
+
+    <!-- TRIP INTEREST FORM -->
+    <section id="trip">
+        <h2>Plan Your Trip</h2>
+        <p>
+            Interested in visiting Terengganu?
+            Fill in the form below!
+        </p>
+        <form class="trip-form">
+
+            <!-- Personal Information -->
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name"
+            placeholder="Enter your name" required>
+
+            <br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"
+            placeholder="Enter your e-mail" required>
+
+            <br><br>
+
+            <!-- Traveller Type -->
+            <p><b>Traveller Type:</b></p>
+
+            <input type="radio" id="student"
+            name="traveller" value="Student">
+            <label for="student">Student</label>
+
+            <input type="radio" id="staff"
+            name="traveller" value="Staff">
+            <label for="staff">Staff</label>
+
+            <input type="radio" id="public"
+            name="traveller" value="Public">
+            <label for="public">Public</label>
+
+            <br><br>
+
+            <!-- Travel Interests -->
+            <p><b>Travel Interests:</b></p>
+
+            <input type="checkbox" id="islands"
+            name="interest" value="Islands">
+            <label for="islands">Islands</label>
+            <br>
+
+            <input type="checkbox" id="food"
+            name="interest" value="Food">
+            <label for="food">Food</label>
+            <br>
+
+            <input type="checkbox" id="culture"
+            name="interest" value="Culture">
+            <label for="culture">Culture</label>
+            <br>
+
+            <input type="checkbox" id="nature"
+            name="interest" value="Nature">
+            <label for="nature">Nature</label>
+
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <footer id="footer">
+        <p>&copy; 2026 Visit Terengganu. All Rights Reserved.</p>
+        <address>
+            Contact us:
+            <a href="mailto:tourism@example.com">
+                tourism@example.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>

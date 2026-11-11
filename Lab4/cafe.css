@@ -1,0 +1,59 @@
+
+/* =========================================
+   e-Cafe Campus External Stylesheet
+   ========================================= */
+
+/* Navigation bar styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #6f3e26;
+    overflow: hidden;
+}
+
+/* Display navigation links as blocks */
+nav li {
+    display: inline-block;
+}
+
+/* Navigation link appearance */
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    background-color: #d2691e;
+    color: white;
+}
+
+/* Old menu prices */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 8px;
+}
+
+/* Feedback form styling */
+.feedback-form {
+    border: 1px solid #d2691e;
+    margin-top: 15px;
+}
+
+/* Video caption styling */
+figcaption {
+    font-style: italic;
+    color: #6f3e26;
+    margin-top: 8px;
+}
+
+/* Footer address styling */
+address {
+    font-style: normal;
+    margin-top: 10px;
+}
