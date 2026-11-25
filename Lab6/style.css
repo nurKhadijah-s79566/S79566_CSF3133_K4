@@ -1,62 +1,50 @@
-/* General page styling */
+/* General page layout */
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    padding: 25px;
     font-family: Arial, sans-serif;
-    background-color: #eef3f7;
+    background-color: #f2f5f8;
     color: #263746;
 }
 
-/* Header styling */
-header {
-    background-color: #1f5675;
-    color: white;
-    text-align: center;
-    padding: 22px 15px;
-}
-
-header h1 {
-    margin: 0 0 8px;
-}
-
-header p {
-    margin: 0;
-}
-
-/* Main page layout */
-main {
-    width: 92%;
-    max-width: 950px;
-    margin: 22px auto;
-}
-
-.panel {
+.container {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
     background-color: white;
-    padding: 20px;
-    margin-bottom: 18px;
     border-radius: 8px;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
 }
 
-h2 {
-    margin-top: 0;
+h1 {
     color: #1f5675;
+    font-size: 25px;
 }
 
-/* Form input and buttons */
+/* Form labels and input fields */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
 input {
-    padding: 9px;
-    margin: 8px;
-    border: 1px solid #9aabb7;
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #aab8c2;
     border-radius: 4px;
 }
 
+/* Buttons and hover effect */
 button {
-    padding: 10px 16px;
-    margin: 5px 4px 5px 0;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-right: 6px;
     background-color: #287eae;
     color: white;
     border: none;
@@ -68,63 +56,26 @@ button:hover {
     background-color: #174f70;
 }
 
-.reset-button {
-    background-color: #777777;
-}
-
-.reset-button:hover {
-    background-color: #4d4d4d;
-}
-
-.choice-buttons {
-    margin-bottom: 18px;
-}
-
-/* Display the player's and computer's images side by side */
-.versus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    text-align: center;
-}
-
-.versus img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    border: 1px solid #d5dfe5;
-    border-radius: 8px;
-    background-color: #f7fafc;
-}
-
-.vs {
-    font-size: 20px;
-    color: #687984;
-}
-
-/* Scoreboard */
-.scoreboard {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    font-weight: bold;
+.result-area {
+    margin: 18px 0;
+    min-height: 55px;
 }
 
 #result {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
 }
 
-/* History table */
-.table-wrap {
-    overflow-x: auto;
+#checkedTime {
+    color: #657782;
+    font-size: 13px;
 }
 
+/* Grade table styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 th, td {
@@ -138,43 +89,21 @@ th {
     color: white;
 }
 
-tbody tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #edf4f8;
 }
 
-tbody tr:hover {
+tr:hover {
     background-color: #d8eaf4;
 }
 
-#summary {
-    font-weight: bold;
-    color: #1f5675;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    color: #52636e;
-    font-size: 14px;
-}
-
-/* Make the layout fit smaller screens */
-@media (max-width: 600px) {
-    main {
-        width: 96%;
+/* Responsive layout for smaller screens */
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
     }
 
-    .versus {
-        gap: 12px;
-    }
-
-    .versus img {
-        width: 95px;
-        height: 95px;
-    }
-
-    .scoreboard {
-        gap: 12px;
+    .container {
+        padding: 16px;
     }
 }
