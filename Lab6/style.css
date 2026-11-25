@@ -1,0 +1,180 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef3f7;
+    color: #263746;
+}
+
+/* Header styling */
+header {
+    background-color: #1f5675;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Main page layout */
+main {
+    width: 92%;
+    max-width: 950px;
+    margin: 22px auto;
+}
+
+.panel {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.10);
+}
+
+h2 {
+    margin-top: 0;
+    color: #1f5675;
+}
+
+/* Form input and buttons */
+input {
+    padding: 9px;
+    margin: 8px;
+    border: 1px solid #9aabb7;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 16px;
+    margin: 5px 4px 5px 0;
+    background-color: #287eae;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174f70;
+}
+
+.reset-button {
+    background-color: #777777;
+}
+
+.reset-button:hover {
+    background-color: #4d4d4d;
+}
+
+.choice-buttons {
+    margin-bottom: 18px;
+}
+
+/* Display the player's and computer's images side by side */
+.versus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    text-align: center;
+}
+
+.versus img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 1px solid #d5dfe5;
+    border-radius: 8px;
+    background-color: #f7fafc;
+}
+
+.vs {
+    font-size: 20px;
+    color: #687984;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-weight: bold;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* History table */
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #bdcbd4;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1f5675;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf4f8;
+}
+
+tbody tr:hover {
+    background-color: #d8eaf4;
+}
+
+#summary {
+    font-weight: bold;
+    color: #1f5675;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #52636e;
+    font-size: 14px;
+}
+
+/* Make the layout fit smaller screens */
+@media (max-width: 600px) {
+    main {
+        width: 96%;
+    }
+
+    .versus {
+        gap: 12px;
+    }
+
+    .versus img {
+        width: 95px;
+        height: 95px;
+    }
+
+    .scoreboard {
+        gap: 12px;
+    }
+}
